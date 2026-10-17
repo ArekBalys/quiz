@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block header %}
+    <h1>Cześć, {{ name }}</h1>
+{% endblock %}
+
+{% block additional_text %}
+    <p>Quiz składa się z {{ total_questions }} pytań. Każde pytanie ma 4 możliwe odpowiedzi, z których tylko jedna jest poprawna. </br>
+        Za każdą w pełni poprawną odpowiedź otrzymujesz 1 punkt.</br>
+        Na końcu quizu zobaczysz swój wynik.</p>
+{% endblock %}
+
+{% block content %}
+    Pytanie {{ iteration }} z {{ total_questions }}: </br>
+    <p><b>{{ question }}</b></p>
+    <form method="post">
+        {% for answer in answers %}
+            <input type="radio" name="answer" value="{{ answer }}" id="{{ answer }}">
+            <label for="{{ answer }}">{{ answer }}</label><br>
+        {% endfor %}
+        </br>
+        {% if iteration == total_questions %}
+            Czy masz jakieś uwagi co do testu
+            </br>
+            <textarea name="uwagi" rows="5"></textarea>
+            </br>
+            <input type="submit" value="Wyślij">
+        {% else %}
+            <input type="submit" value="Dalej">
+        {% endif %}
+    </form>
+{% endblock %}

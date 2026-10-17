@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <p style = "text-align: right"> Najlepsze wyniki: </br> 
+            {% for score in best_score %}
+                {{ score.name }}: {{ (score.best_score * 100) / total_questions }}
+            </br>
+            {% endfor %}
+        </p>
+        {% block header %}
+        {% endblock %}
+    </header>
+    <div class="additional_text">
+        {% block additional_text %}
+        {% endblock %}
+    </div>   
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+<footer>
+    <p>&copy; 2026 Arkadiusz Bałys</p>
+</footer>
+</html>

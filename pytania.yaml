@@ -1,0 +1,36 @@
+questions:
+  - question: "Do czego można wykorzystywać modele sztucznej inteligencji w aplikacjach Python?"
+    answers:
+      - Wyłącznie do formatowania tekstu
+      - Do analizy danych, rozpoznawania obrazów i przetwarzania języka naturalnego
+      - Do tworzenia gier komputerowych
+      - Tylko do obliczeń matematycznych
+    correct_answer: 2
+  - question: "Która biblioteka Pythona jest popularna do pracy z modelami sztucznej inteligencji?"
+    answers:
+      - NumPy
+      - TensorFlow
+      - Matplotlib
+      - Pandas
+    correct_answer: 2
+  - question: "Jak najlepiej przechowywać klucz API w aplikacji Python?"
+    answers:
+      - W publicznym repozytorium
+      - W komentarzu w kodzie
+      - W zmiennej środowiskowej lub menadżerze sekretów
+      - W nazwie pliku źródłowego
+    correct_answer: 3
+  - question: "Jak można zintegrować aplikację Python z zewnętrznym modelem językowym?"
+    answers:
+      - Korzystając z API udostępnionego przez dostawcę modelu
+      - Zmieniając rozszerzenie pliku na .ai
+      - Uruchamiając wyłącznie funkcję print_ai()
+      - Unstalując dowolną bibliotekę bez jej konfiguracji
+    correct_answer: 1
+  - question: "Co oznacza inference w kontekście uczenia maszynowego?"
+    answers:
+      - Usuwanie danych z modelu
+      - Wykorzystywanie wytrenowanego modelu do generowania predykcji
+      - Zawsze trenowanie modelu od podstaw
+      - Instalowanie interpretera Ptyhon
+    correct_answer: 2

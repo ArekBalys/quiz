@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block header %}
+    <h1>Witaj w Quizie o zastosowaniu modeli sztucznej inteligencji w aplikacjach Python</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <label for="name">Podaj swoje imię i kliknij "Rozpocznij quiz"</label>
+    </br>
+    </br>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Rozpocznij quiz">
+    </form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block header %}
+    <h1>Twój wynik quizu</h1>
+{% endblock %}
+
+{% block content %}
+    <p>Gratulacje, {{ name }}! Zakończyłeś quiz.</p>
+    <p><b>Otrzymałeś {{ score }} punktów z {{ total_questions }} możliwych.</b></p>
+    <form method="post" action="{{ url_for('hello') }}">
+        <input type="submit" value="Rozpocznij quiz ponownie">
+    </form>
+{% endblock %}
